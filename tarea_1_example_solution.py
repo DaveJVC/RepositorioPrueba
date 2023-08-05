@@ -57,7 +57,7 @@ def separa_letras(Cadena):
     estado = 7777
     res1 = 0
     res2 = 0
-    if type(Cadena) == int:  # Si es un numero
+    if isinstance(Cadena, int):  # Si es un numero
         estado = -100  # Codigo de error unico
         res1 = None  # Resultado si hay un error
         res2 = None  # Resultado si hay un error
