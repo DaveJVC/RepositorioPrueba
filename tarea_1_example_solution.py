@@ -74,14 +74,3 @@ def separa_letras(Cadena):
                 estado = -200  # Codigo de error unico
                 res1 = None  # Resultado si hay un error
                 res2 = None  # Resultado si hay un error
-                return (estado), (res1), (res2)
-            else:
-                pass  # para salir del ciclo for
-        else:
-            import re
-            estado = 0  # Codigo de exito
-            res1 = re.sub('[^A-Z]', '', Cadena)
-            # Funcion para eliminar las minusculas
-            res2 = re.sub('[^a-z]', '', Cadena)
-            # Funcion para eliminar las mayusculas
-            return (estado), (res1), (res2)
